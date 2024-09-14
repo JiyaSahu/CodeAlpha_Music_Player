@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+
+</head>
+
+<body>
+    <header>
+
+        <img src="svgs/playlist.svg" alt="Eror" id="playlist-img">
+
+        <h1>Feel The Music</h1>
+
+        <svg enable-background="new 0 0 64 64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" height="30"
+            width="30" fill="white">
+            <path
+                d="m17.646 30.533v-16.887s8.156 3.938 3.759 12.631c-.146.29 1.12.602 1.284.322 8.971-15.383-2.893-14.334-5.043-24.6h-4.375v23.479c-.834-.266-2.311-.414-3.27-.414-10.668 0-10.668 10.936 0 10.936 3.91 0 7.645-2.448 7.645-5.467" />
+            <path
+                d="m53.646 2h-4.378v23.479c-.834-.266-2.311-.414-3.27-.414-10.666 0-10.666 10.936 0 10.936 3.912 0 7.647-2.449 7.647-5.468v-16.887s8.154 3.939 3.758 12.631c-.145.29 1.119.602 1.283.322 8.974-15.381-2.889-14.332-5.04-24.599" />
+            <path
+                d="m26.271 28v23.479c-.836-.266-2.313-.414-3.27-.414-10.668 0-10.668 10.936 0 10.936 3.91 0 7.645-2.448 7.645-5.468v-16.887s8.154 3.938 3.758 12.632c-.145.288 1.119.601 1.283.32 8.972-15.38-2.891-14.331-5.041-24.598z" />
+        </svg>
+
+    </header>
+
+    <main>
+        <div class="left">
+            <div class="img-music">
+                <img src="images/musicanim.webp" alt="Error" id="song-anim" >
+            </div>
+
+            <div class="vlm">
+                <div class="vlm-svg">
+                    <img src="svgs/volume-medium-outline.svg" alt="" id="vlmImg">
+                </div>
+                <input type="range" name="" id="vlm-range" onchange="volume()">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box-name">
+                <h2 id="song-name">Satranga</h2>
+                <h3 id="singer-name">Arjit Singh</h3>
+            </div>
+
+            <input type="range" name="" id="song-duration" onchange="duration()">
+            <div class="btns">
+                <div class="prev" onclick="previousSong()">
+
+
+                    <img src="./svgs/play-skip-back-outline.svg" alt="">
+
+                </div>
+
+                <div class="play-pause" onclick="playPause()">
+
+
+                    <img src="./svgs/play-outline (1).svg" alt="" id="playPause">
+
+                </div>
+
+                <div class="next" onclick="nextSong()">
+
+
+                    <img src="./svgs/play-skip-forward-outline.svg" alt="">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="songsList">
+            <div class="playList">
+                <img src="images/kahani.jpeg" alt="">
+                <div class="song-detail">
+                    <h2>Kahani</h2>
+                    <h4>K Mohan</h4>
+                </div>
+            </div>
+            <div class="playList">
+                <img src="images/longTimeNoSee.jpg" alt="">
+                <div class="song-detail">
+                    <h2>Nadaniya</h2>
+                    <h4>Rahul Vaidya</h4>
+                </div>
+            </div>
+            <div class="playList">
+                <img src="images/nadaniya.jpg" alt="">
+                <div class="song-detail">
+                    <h2>Long Time No See</h2>
+                    <h4>Raffey Anwar and TAIMOUR BAIG</h4>
+                </div>
+            </div>
+            <div class="playList">
+                <img src="images/tauba.webp" alt="">
+                <div class="song-detail">
+                    <h2>Tauba Tauba</h2>
+                    <h4>Karan Aujla</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
